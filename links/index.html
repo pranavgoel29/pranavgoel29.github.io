@@ -6,7 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Link Page|VS Techz</title>
         <link rel="stylesheet" href="app/scss/style.css">
-        <script src="./script.js"></script>
         
     </head>
     <body>
@@ -42,25 +41,7 @@
         <a href="https://www.facebook.com/VS-Techz-184131375715695/">Facebook-Page</a> 
         </div>
     
-    <script>
-        var checkbox = document.querySelector('input[name=theme]');
-        checkbox.addEventListener('change', function(){
-            if(this.checked) {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'dark')
-            } else {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'light')
-            }
-        })
-
-        let trans = () => {
-            document.documentElement.classList.add('transition');
-            window.setTimeout(() => {
-                document.documentElement.classList.remove('transition');
-            }, 1000)
-        }
-    </script>
+        <script src="script/script.js"></script>
 
     </body>
 </html>

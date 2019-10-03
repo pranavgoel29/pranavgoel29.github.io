@@ -1,10 +1,12 @@
-html{
+html {
     box-sizing: border-box;
     font-size: 100%;
     --color-headings: #000000;
     --color-hover: rgb(0, 10, 99);
+    --border-color: #ffffff;
     --border-featured-color: #001fac;
     --featured-background-color: #ffffff;
+    --follow-background-color: #0c0a72; 
     --featured-text: #00177c;
     --color-background: linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%);
 }
@@ -14,10 +16,12 @@ html[data-theme='dark'] {
     font-size: 100%;
     --color-headings: rgba(235, 235, 235, 0.897);
     --color-hover: rgb(0, 21, 141);
+    --border-color: #52ebff;
     --border-featured-color: #002fff;
-    --featured-background-color: #bebebe;
+    --featured-background-color: #ffc526;
+    --follow-background-color: #0c0a72;
     --featured-text: #2911ff;
-    --color-background: linear-gradient(135deg, rgba(21, 21, 21, 0.09) 0%, rgba(21, 21, 21, 0.09) 38%,rgba(244, 244, 244, 0.09) 38%, rgba(244, 244, 244, 0.09) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.09) 0%, rgba(14, 14, 14, 0.09) 8%,rgba(107, 107, 107, 0.09) 8%, rgba(107, 107, 107, 0.09) 100%),linear-gradient(45deg, rgba(228, 228, 228, 0.06) 0%, rgba(228, 228, 228, 0.06) 36%,rgba(10, 10, 10, 0.06) 36%, rgba(10, 10, 10, 0.06) 100%),linear-gradient(45deg, rgba(16, 16, 16, 0.03) 0%, rgba(16, 16, 16, 0.03) 6%,rgba(197, 197, 197, 0.03) 6%, rgba(197, 197, 197, 0.03) 100%),linear-gradient(90deg, rgba(244, 244, 244, 0.1) 0%, rgba(244, 244, 244, 0.1) 73%,rgba(236, 236, 236, 0.1) 73%, rgba(236, 236, 236, 0.1) 100%),linear-gradient(45deg, rgba(187, 187, 187, 0.1) 0%, rgba(187, 187, 187, 0.1) 10%,rgba(23, 23, 23, 0.1) 10%, rgba(23, 23, 23, 0.1) 100%),linear-gradient(135deg, rgba(206, 206, 206, 0.01) 0%, rgba(206, 206, 206, 0.01) 79%,rgba(111, 111, 111, 0.01) 79%, rgba(111, 111, 111, 0.01) 100%),linear-gradient(0deg, rgba(211, 211, 211, 0.01) 0%, rgba(211, 211, 211, 0.01) 87%,rgba(78, 78, 78, 0.01) 87%, rgba(78, 78, 78, 0.01) 100%),linear-gradient(90deg, rgba(109, 109, 109, 0.07) 0%, rgba(109, 109, 109, 0.07) 55%,rgba(110, 110, 110, 0.07) 55%, rgba(110, 110, 110, 0.07) 100%),linear-gradient(90deg, rgb(2, 2, 2),rgb(84, 84, 84));
+    --color-background: linear-gradient(135deg, rgba(34, 34, 34, 0.555) 0%, rgba(21, 21, 21, 0.09) 38%,rgba(58, 58, 58, 0.397) 38%, rgba(32, 32, 32, 0.479) 100%),linear-gradient(45deg, rgba(14, 14, 14, 0.09) 0%, rgba(14, 14, 14, 0.09) 8%,rgba(107, 107, 107, 0.09) 8%, rgba(44, 43, 43, 0.09) 100%),linear-gradient(45deg, rgba(19, 19, 19, 0.603) 0%, rgba(228, 228, 228, 0.06) 36%,rgba(10, 10, 10, 0.06) 36%, rgba(10, 10, 10, 0.06) 100%),linear-gradient(45deg, rgba(16, 16, 16, 0.03) 0%, rgba(16, 16, 16, 0.03) 6%,rgba(39, 39, 39, 0.671) 6%, rgba(51, 51, 51, 0.568) 100%),linear-gradient(90deg, rgba(32, 32, 32, 0.568) 0%, rgba(32, 32, 32, 0.596) 73%,rgba(34, 34, 34, 0.356) 73%, rgba(27, 27, 27, 0.575) 100%),linear-gradient(45deg, rgba(19, 19, 19, 0.589) 0%, rgba(32, 32, 32, 0.664) 10%,rgba(23, 23, 23, 0.568) 10%, rgba(23, 23, 23, 0.61) 100%),linear-gradient(135deg, rgba(42, 42, 42, 0.295) 0%, rgba(206, 206, 206, 0.01) 79%,rgba(111, 111, 111, 0.01) 79%, rgba(31, 31, 31, 0.493) 100%),linear-gradient(0deg, rgba(26, 26, 26, 0.507) 0%, rgba(26, 26, 26, 0.568) 87%,rgba(26, 26, 26, 0.685) 87%, rgba(42, 42, 42, 0.473) 100%),linear-gradient(90deg, rgba(109, 109, 109, 0.07) 0%, rgba(32, 32, 32, 0.322) 55%,rgba(41, 41, 41, 0.287) 55%, rgba(59, 59, 59, 0.486) 100%),linear-gradient(90deg, rgb(2, 2, 2),rgba(37, 37, 37, 0.644));
 }
 
 *, *:before, *:after {
@@ -30,9 +34,9 @@ html[data-theme='dark'] {
     display: grid;
     justify-items: right;
     align-items: top;
-    margin-right: 20px;
+    margin-right: 12px;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 body{
@@ -60,7 +64,7 @@ a{
   color:#ffffff;
   max-width:400px;
   margin:0 auto 15px auto;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--border-color);
   border-radius: 30px;
   display:block;
   text-decoration:none;
@@ -105,8 +109,8 @@ h2{
 
 
       a {
+      background-color: var(--follow-background-color);
       flex:1;
-      background-color:#0c0a72 ;
       padding:7px 10px;
       margin-right:10px;
       border:none;
@@ -124,7 +128,7 @@ h2{
 
 .switch {
     position: relative;
-    margin-right: 4px;
+    margin-right: 0px;
     margin-top: 4px;
     display: grid;
     width: 45px;
