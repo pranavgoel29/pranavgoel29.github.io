@@ -71,7 +71,7 @@ p {
 a {
   color: #ffffff;
   max-width: 400px;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 16px auto;
   border: 2px solid var(--border-color);
   border-radius: 30px;
   display: block;
@@ -108,6 +108,7 @@ a.featured:before {
 h2 {
   color: var(--color-headings);
   font-size: 18px;
+  margin-top: 25px;
   font-weight: normal-bold;
   text-transform: uppercase;
   letter-spacing: 3px;
