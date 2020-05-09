@@ -1,4 +1,4 @@
-html {
+html[data-theme='dark'] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
@@ -13,7 +13,7 @@ html {
   --color-background: linear-gradient(45deg, rgba(20, 136, 221, 0.5) 0%, rgba(20, 136, 221, 0.5) 12.5%,rgba(27, 145, 222, 0.5) 12.5%, rgba(27, 145, 222, 0.5) 25%,rgba(33, 154, 222, 0.5) 25%, rgba(33, 154, 222, 0.5) 37.5%,rgba(40, 163, 223, 0.5) 37.5%, rgba(40, 163, 223, 0.5) 50%,rgba(46, 173, 224, 0.5) 50%, rgba(46, 173, 224, 0.5) 62.5%,rgba(53, 182, 225, 0.5) 62.5%, rgba(53, 182, 225, 0.5) 75%,rgba(59, 191, 225, 0.5) 75%, rgba(59, 191, 225, 0.5) 87.5%,rgba(66, 200, 226, 0.5) 87.5%, rgba(66, 200, 226, 0.5) 100%),linear-gradient(135deg, rgb(34, 87, 254) 0%, rgb(34, 87, 254) 12.5%,rgb(42, 82, 249) 12.5%, rgb(42, 82, 249) 25%,rgb(50, 77, 243) 25%, rgb(50, 77, 243) 37.5%,rgb(58, 72, 238) 37.5%, rgb(58, 72, 238) 50%,rgb(67, 67, 233) 50%, rgb(67, 67, 233) 62.5%,rgb(75, 62, 228) 62.5%, rgb(75, 62, 228) 75%,rgb(83, 57, 222) 75%, rgb(83, 57, 222) 87.5%,rgb(91, 52, 217) 87.5%, rgb(91, 52, 217) 100%);
 }
 
-html[data-theme='dark'] {
+html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
@@ -53,7 +53,7 @@ body {
 }
 
 .logo {
-  width: 110px;
+  width: 120px;
 }
 
 a:hover, a.featured:hover {
